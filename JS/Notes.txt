@@ -1,0 +1,154 @@
+Day 1 : 15.05.2023 -------------------------------------
+Curriculum:
+📍Introduction to Javascript
+📍Language Basics: Variables, Data Types - Primitive and Reference, Number (Add, Sub, Mul, NaN, Infinity), Inbuilt Functions - Numbers
+📍Dialogs: Alert, Confirm, Input
+📍Control Flow
+----------------------------------------------------------
+Intoduction:-
+    - Javascript file u must have .js extension
+    - JS is case-sensitive language.
+    - JS is a script language which needs an interpreter
+    - It can change HTML & CSS dynamically.
+    - Can do events (click, key press etc.)
+    - Sending & receiving data to server.
+    - Storing the data in cloud/
+        ? 1st old JS is client-side.
+        ? Became server-side by using Node.js
+    - It can perform an action, validation & adds functionality.
+    - We can create dynamic web page.
+    - We can interact with web page through JS.
+    - Without JS web pages are called as Static & dummy pages.
+
+Lang Basics:
+    - Ways to insert js code into HTML file:
+        1. Using script tag:
+            <script>
+            //your js code
+            </script>
+        2. External script (Insert it after body tag):
+            <script src="./style.js"></script>
+    - Diff between scripting & programming language?
+        + Script:
+            > Scripting lang is high-level language.
+            > Works according to the script like do this & that.
+            > Script works on the programming lang.
+            > Executes dependently inside the parent. That parent has to be a programming lang.
+        + Programming: 
+            > Programming lang is low-level language.
+            > Executes independently.
+    - Where to Practice :
+       > VS Code, Browser console in source tb.
+       > Its result will be in browser's console tab.
+
+Dialogs: Alert, Confirm, Input
+    - alert('Hi, how are you?');
+
+Control Flow
+    -
+
+Variables:
+    - It is a container to hold some data that can be used that can be used by the program.
+    - It means to store some data in memory address.
+    - var name = 'Moni';
+        -> var means keywordVariable
+        -> name means variableName
+        -> = means Assignment operator
+        -> Moni means variableValue string should be mentioned inside '' | number can be simple given without inside ''| boolean means true & false | array means [] | object means {}
+
+Declare a variable (Syntax):
+        -> keywordVariable yourVarName = yourVarValue;
+
+Types of keyword Variables:-
+1. var - Global scope variable. | Global means for easy understanding public but we shld not mention like that
+------ came after 2015 ES6 (express.js)
+2. let - Block scope variables. {}
+3. const means never change - Block scope variables. {} | Block means for easy understanding private but we shld not mention like that
+
+What kind of data u r going to store & declarations of different data.
+(5) Types of Data-types:-----------------
+number - 12233 | Eg: var mathMark = 95;
+string - 'nsffd' | Eg: var engMark = 'wwww';
+boolean - true or false | Eg: var tamilMark = true;
+array - [] | Eg: var socialMark = [];
+object - {} | Eg: let engMark = {};
+
+💡 console.log(var-name);
+    - gives result at browser console
+    - it cannot access var-name before its initialization.
+    - always we need to declare variables before accessing it.
+    - always takes from bottom to top approach.
+    - In othr words, last come first according to the rules below.
+
+💡 redeclare means declare again with same var keyword & variable-name with different value.
+    Eg: var name = 'qwe';
+        var name = '123';
+
+💡 reassign meand assign again without repeating variable keyword but with same variable name with different value.
+    Eg: var total = 'qwe';
+        total = '123';
+📌Rules:-
+    1. Var
+        > We can reassign & redeclare.
+    2. let 
+        > We cannot redeclare in same scope.
+        > We can redeclare in different scope.
+        > We can reassign.
+    3. const
+        > We cannot redeclare in same scope.
+        > We can redeclare in different scope.
+        > We cannot reassign.
+   📢Notes: scope means a set of code inside a block {}.
+
+Main difference among var, let & const?
+    - Var
+        > redeclare
+            ✅ We can redeclare in same & different scope.
+            ✅ Eg: var name = '123'
+                    var name = 'abc'
+                    console.log(name);
+                    Res: abc \\ We can redeclare a global scope variable-name again & again.
+        > reassign
+            ✅ We can reassign.
+            ✅ Eg: var total = '123';
+                    var total = 'abc';
+                    total = 'wwww';
+                    console.log(total);
+                    Res: wwww \\ We can reassign a global scope variable-name without mention it's type again.
+    - 'let' works on scope-level.
+        > redeclare 
+            ✅ We cannot redeclare in same scope which will result in error.
+                    Eg: let tot = '234';
+                        let tot = 'abc';
+                   ❌ Warning: We cannot redeclare a block scope variable-name again & again.
+            ✅ We cannot redeclare in different scope.
+               Eg: let name = '123';
+                   {
+                    let name = 'abc'; //Block of code
+                   }
+                    Res: abc
+            
+        > reassign
+            ✅ We can reassign.
+                Eg: let total = 'abc';
+                    total = 'wwww';
+                    console.log(total);
+                    Res: wwww
+    - 'const' means constant
+        > redeclare 
+            ✅ We cannot redeclare in same scope which will result in error.
+                Eg: const pi = 3.14;
+                    pi = 5;
+                    console.log(pi);
+                     // Res: Error
+                ❌ Warning: We cannot redeclare a block scope variable-name again & again.
+            ✅ We can redeclare in different scope.
+                Eg: const name = 'Ravi';
+                    {
+                        const name = 'Ravi One';
+                        console.log(name);
+                        // Res: Ravi One 
+                        // like in scenarios like school attendance register
+                    }
+        > reassign
+            ✅ We cannot reassign.
