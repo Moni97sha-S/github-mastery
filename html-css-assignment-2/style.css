@@ -59,9 +59,28 @@ img {
     cursor: pointer;
 }
 
+.small-container {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
 .w-in-blk {
     max-width: 100%;
     display: inline-block;
+}
+
+.w-row {
+    width: 25%;
+}
+
+.w-col {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* ******* */
@@ -524,18 +543,18 @@ img {
 /* Close HEADER */
 /* ************ */
 
-/* ************ */
-/*  SECTION-2   */
-/* ************ */
-.section1-pad {
+/* **************************** */
+/* SECTION-2 Our Specialization */
+/* **************************** */
+.our-specialization {
     padding: 10% 5%;
 }
 
-.section1-pad .extra5percent {
+.our-specialization.extra5percent {
     padding: 15% 0 10%;
 }
 
-.section1-container {
+.section2-container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -629,13 +648,9 @@ img {
     margin-top: 20px;
 }
 
-/* *************** */
-/* Close SECTION-2 */
-/* *************** */
-
-/* ********* */
-/* SECTION-3 */
-/* ********* */
+/* ******************** */
+/* SECTION-3 Who we are */
+/* ******************** */
 .section-3 {
     margin-top: 15px;
     padding: 10% 5% 5%;
@@ -675,12 +690,8 @@ img {
     padding-right: 100px;
 }
 
-/* *************** */
-/* Small SECTION-3 */
-/* *************** */
-
 /* ********************* */
-/* Close Small SECTION-3 */
+/* Small SECTION-3 Facts */
 /* ********************* */
 .smallSection3 {
     /* margin: 10% -10% 0; */
@@ -717,16 +728,16 @@ img {
     font-weight: 500;
 }
 
-/* *************** */
-/* Close SECTION-3 */
-/* *************** */
+/* *************************** */
+/* Close Small SECTION-3 Facts */
+/* *************************** */
 
-/* ********* */
-/* SECTION-4 */
-/* ********* */
+/* ****************** */
+/* SECTION-4 Our Work */
+/* ****************** */
 
 .our-work {
-    padding: 0 10% 10%;
+    padding: 10% 5% 2%;
 }
 
 .container {
@@ -738,18 +749,19 @@ img {
     margin-right: auto;
 }
 
-.mar-left {
+.grid {
     /* margin-left: -90px; */
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 5px 2px;
-    justify-content: space-evenly;
+    padding-left: auto;
+
 }
 
 
-.w-col-3 {
+/* .w-col-3 {
     min-width: 33.33333333%;
-}
+} */
 
 .collection-wrapper {
     padding-top: 20px;
@@ -802,6 +814,128 @@ img {
     opacity: 1;
 }
 
+/* ************************ */
+/* Close SECTION-4 Our Work */
+/* ************************ */
+
 /* *************** */
-/* Close SECTION-4 */
+/* SECTION-5 Quote */
 /* *************** */
+.quote {
+    text-align: center;
+    color: white;
+    padding: 7% 0;
+    /* height: 100%; */
+    background-color: #e47312;
+    background-image: linear-gradient(72deg, #e47312, rgba(255, 99, 97, 0.78)), url('./img/banner-2.jpg');
+    background-position: 0px, 0px, center;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    margin-bottom: 100px;
+}
+
+.quote h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+.quote p {
+    font-size: 20px;
+    /* font-weight: none; */
+}
+
+.navigation-link.w-in-blk:hover.color {
+    text-decoration-color: #fff;
+}
+
+.navigation-link.w-in-blk.color {
+    color: white;
+    margin-top: 30px;
+}
+
+/* *********************** */
+/* SECTION-6 Professionals */
+/* *********************** */
+.professionals {
+    padding: 5% 10%;
+}
+
+.members {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.member {
+    position: relative;
+    width: calc(25% - 20px);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.member-img {
+    min-height: 280px;
+    background-image: url('./img/team-1.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.member-img._2 {
+    background-image: url('./img/team-2.jpg');
+}
+
+.member-img._3 {
+    background-image: url('./img/team-3.jpg');
+}
+
+.member-img._4 {
+    background-image: url('./img/team-4.jpg');
+}
+
+.member .content {
+    background-color: white;
+    /* padding: 20px 15px; */
+    padding: 20px 66px 29px 29px;
+    white-space: wrap;
+}
+
+.member .content h2,
+.member .content p {
+    margin: 10px;
+}
+
+.member .content h2 {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.member .content p {
+    font-size: 14px;
+    color: #bdbdc9;
+}
+
+.social-media.horizontal {
+    position: absolute;
+    bottom: 0%;
+    background-color: #e47312;
+}
+
+
+/* ********************** */
+/* SECTION-7 Testimonials */
+/* ********************** */
+
+/* ********************* */
+/* SECTION-8 Latest News */
+/* ********************* */
+
+/* *************** */
+/* SECTION-9 Logos */
+/* *************** */
+
+/* **************** */
+/* SECTION-9 Footer */
+/* **************** */
