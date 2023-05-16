@@ -65,7 +65,7 @@ Types of keyword Variables:-
 2. let - Block scope variables. {}
 3. const means never change - Block scope variables. {} | Block means for easy understanding private but we shld not mention like that
 
-What kind of data u r going to store & declarations of different data.
+What kind of data u r going to store & declaration + initialization of different data.
 (5) Types of Data-types:-----------------
 number - 12233 | Eg: var mathMark = 95;
 string - 'nsffd' | Eg: var engMark = 'wwww';
@@ -152,3 +152,40 @@ Main difference among var, let & const?
                     }
         > reassign
             ✅ We cannot reassign.
+
+Day 2 16-05-2023 agenda: -----------------
+    Basic revise (From Day 1)
+    Doubts related to Variable and data type-
+    Q&A:
+    Strings (One of the data type)
+    Control Flow statements
+-------------------------------
+JS handles all the controls in the website
+    - how brain controls human body
+    - how human contorls the car
+What is Variable?
+    - It is a container to hold some data.
+    - To create a variable, there are some keywords.
+What is hoisting?
+    - It is moving declaration to the top of the assignment & console and executes the result with value.
+    - var name -> declaration
+    - name = 'raj'; -> value initialization
+    - Eg: name = 123;
+          console.log(name);
+          var name; // res:123
+    - In let & const (more strict & brought discipline in variable declaration), so hoisting is not possible.
+Datatype - What type of data u are storing?
+    - string: 'name', 'address'
+        Eg: var tyre = 'name';
+    - number: 12324 ex-phone num, adhaar card not
+        Eg: let phone = 123545;
+    - boolean: true or false
+        Eg: let isTodayMonday = false;
+    - object: {} group of related items like variables etc.
+        Eg: let tyre = {
+            name: 'moni',
+            color: 'red',
+            owner: 'MRF'
+            }
+    - array: [] collection of related value
+        Eg: let carBrand = [maruthi, tata, java, ]
