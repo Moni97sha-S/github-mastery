@@ -153,7 +153,7 @@ Main difference among var, let & const?
         > reassign
             ✅ We cannot reassign.
 
-Day 2 16-05-2023 agenda: -----------------
+Day 2 : 16-05-2023 agenda: -----------------
     Basic revise (From Day 1)
     Doubts related to Variable and data type-
     Q&A:
@@ -189,3 +189,76 @@ Datatype - What type of data u are storing?
             }
     - array: [] collection of related value
         Eg: let carBrand = [maruthi, tata, java, ]
+
+Day 3 : 17-05-2023 ------------------
+Datatypes:
+    - string | number | boolean | array |object
+In-built methods:
+    - predefined rules/codes
+    - starts with .
+    - Gives us result based on the input
+
+String Methods:-
+    >.length
+        - It tells how many characters are there in the string.
+    >.toUpperCase()
+        - It turns all small letter into capital letter.
+    >.toLowerCase()
+        - It turns all capital letter into small letter.
+    >.charAt(3)
+        - It shows exact letter at mentioned position.
+    >.charCodeAt(4)
+        - It shows computer understandable binary (ASCII) code at mentioned position.
+        - ASCII -> American Standard Code Information Interchange 
+        - If 'm' at 4th position from 0 then it executes m's ascii value 101
+    >.trim()
+        - It trims from whitespaces before and after of a string.
+        - to remove leading and trailing whitespace
+    >.trimStart()
+        - It trims from whitespaces before of a string.
+    >.trimEnd()
+        - It trims from whitespaces after of a string.
+    >.concat('Morning')
+        - It adds two strings (+)
+        - adding a string into another string
+    >.slice(from, end) 
+        - .slice(7,10) or .slice(-3)
+        - It takes negative value and start from end position
+        - negative number given means it takes from end
+    >.substring(3)
+        - it won't take negative
+        - It don't take negative value and result will be from 0th position always.
+    >.indexof('how') 
+        - search exactly with word/characters in strings
+        - whereas .charAt() mtd will differ as we can mention position in numbers.
+    >.startswith('e') 
+        - it shows res in boolean T/F if that string starts with given str then true orelse F
+    >.
+
+Control Flow
+    - how ur code execution happens based on the variables or some operators
+    - Conditional statements: if, if-else, switch
+        > true or false
+        > Eg if-else:   
+                let rajesh = 23;
+                if(23>18){
+                    console.log('He can vote')
+                }
+                else{
+                    console.log('He cannot vote')
+                }
+        > Eg else-if:   
+                let mark = 400;
+                if(mark<=400){
+                    console.log('C');
+                }
+                else if(mark <=450){
+                    console.log('B')
+                }
+                else{
+                    cosole.log('F')
+                }
+    - looping statements: for, while , do-while
+
+Day 4 : 18.05.2023 -----------------------
+
