@@ -618,7 +618,6 @@ img {
 .cards {
     display: flex;
     flex-direction: row;
-
 }
 
 .cards p {
@@ -651,7 +650,7 @@ img {
 /* ******************** */
 /* SECTION-3 Who we are */
 /* ******************** */
-.section-3 {
+.who-we-are {
     margin-top: 15px;
     padding: 10% 5% 5%;
 }
@@ -693,7 +692,7 @@ img {
 /* ********************* */
 /* Small SECTION-3 Facts */
 /* ********************* */
-.smallSection3 {
+.sample-facts {
     /* margin: 10% -10% 0; */
     padding: 0 5% 10%;
     /* padding: 15% 0 10%; */
@@ -758,10 +757,9 @@ img {
 
 }
 
-
-/* .w-col-3 {
-    min-width: 33.33333333%;
-} */
+.w-col-3 {
+    width: 33.33333333%;
+}
 
 .collection-wrapper {
     padding-top: 20px;
@@ -770,7 +768,7 @@ img {
 }
 
 .proj-content {
-    /* width: 400px; */
+    width: 400px;
     position: relative;
     /* left: 0%; */
     overflow: hidden;
@@ -842,16 +840,19 @@ img {
 
 .quote p {
     font-size: 20px;
+    line-height: 26px;
+    color: hsla(0, 0%, 100%, 0.7);
     /* font-weight: none; */
 }
 
-.navigation-link.w-in-blk:hover.color {
-    text-decoration-color: #fff;
-}
 
 .navigation-link.w-in-blk.color {
     color: white;
     margin-top: 30px;
+}
+
+.navigation-link.w-in-blk:hover {
+    text-decoration-color: #fff;
 }
 
 /* *********************** */
@@ -931,11 +932,161 @@ img {
 /* ********************* */
 /* SECTION-8 Latest News */
 /* ********************* */
+.latest-news {
+    padding: 10% 5%;
+}
+
+.w-row {
+    gap: 20px 5px;
+}
+
+.blogpost {
+    width: 500px;
+
+}
+
+.blogpost-img {
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tag {
+    position: absolute;
+    right: 0%;
+}
+
+.number {
+    text-align: center;
+    font-size: 22px;
+    padding: 23px 25px;
+    color: #fff;
+    background-image: linear-gradient(210deg, #e47312, #ff6361);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.month {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #8a8a92;
+    background-color: #fff;
+    height: 25px;
+}
+
+.blogpost-content {
+    color: #fff;
+    background-image: linear-gradient(158deg, #e47312, #ff6361);
+    background-color: #e47312;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* width: 250px; */
+    padding: 25px 56px 25px 30px;
+}
+
+.blogpost-content h1 {
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.blogpost-content p {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+
+
+.navigation-link.w-in-blk.active {
+    text-decoration: underline 0.5px solid #fff;
+    text-underline-offset: 7px;
+    font-size: 11px;
+    margin-top: 15px;
+}
 
 /* *************** */
 /* SECTION-9 Logos */
 /* *************** */
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(56deg, #e47312, #ff6361);
+    width: 100%px;
+    height: 200px;
+}
+
+.logos h4 {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+.logo-size {
+    width: 100px;
+}
 
 /* **************** */
 /* SECTION-9 Footer */
 /* **************** */
+.footer {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-top: 1px solid #2f3038;
+    background-color: #0a1229;
+}
+
+.primary {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about {
+    color: #fff;
+}
+
+.about h1 {}
+
+.about p {}
+
+.services {
+    color: #fff;
+}
+
+.services .links .link {
+    color: #fff;
+    padding: 40px;
+    margin: 50px;
+}
+
+.contact {
+    color: #fff;
+}
+
+.contact-way {
+    display: flex;
+    flex-direction: column;
+}
+
+.goto-top {
+    margin-top: 80px;
+    background-color: #e47312;
+}
