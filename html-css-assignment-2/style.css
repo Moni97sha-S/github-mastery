@@ -7,7 +7,7 @@
 
 body {
     border: 5px solid blue;
-    margin: 2% 2% 2%;
+    margin: 2% 2% 0;
     font-family: 'Dosis', sans-serif;
     color: #121213;
     font-size: 14px;
@@ -550,7 +550,7 @@ img {
     padding: 10% 5%;
 }
 
-.our-specialization.extra5percent {
+.our-specialization.extra-5-percent {
     padding: 15% 0 10%;
 }
 
@@ -651,33 +651,51 @@ img {
 /* SECTION-3 Who we are */
 /* ******************** */
 .who-we-are {
-    margin-top: 15px;
-    padding: 10% 5% 5%;
+    padding: 0 7%;
 }
+
+/* .who-we-are.extra-5-percent {
+    padding-top: 10%;
+    padding-bottom: 10%;
+} */
+
+/* .margin-page {
+    margin-top: 15%;
+} */
 
 .flex-row {
     display: flex;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
+    padding: 10% 2% 5%;
+
 }
 
-.left {
+/* .left {
     position: relative;
     float: left;
     min-height: 1px;
     padding: 0px 10px;
     width: 50%;
+} */
+.w-col-6 {
+    width: 50%;
 }
 
 .image-size {
-    margin: 90px 0 54px;
+    /* margin: 90px 0 54px; */
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    /* margin-bottom: 84px; */
 }
 
 .right {
     width: 50%;
     float: right;
-    padding-left: 100px;
+    padding-left: 110px;
+    margin-bottom: 70px;
 }
 
 .right p {
@@ -686,16 +704,13 @@ img {
     color: #919197;
     font-size: 17px;
     line-height: 25px;
-    padding-right: 100px;
 }
 
 /* ********************* */
 /* Small SECTION-3 Facts */
 /* ********************* */
 .sample-facts {
-    /* margin: 10% -10% 0; */
-    padding: 0 5% 10%;
-    /* padding: 15% 0 10%; */
+    padding: 0 9% 10%;
 }
 
 .row {
@@ -727,6 +742,11 @@ img {
     font-weight: 500;
 }
 
+.facts p {
+    color: #919197;
+    font-size: 17px;
+}
+
 /* *************************** */
 /* Close Small SECTION-3 Facts */
 /* *************************** */
@@ -736,7 +756,15 @@ img {
 /* ****************** */
 
 .our-work {
-    padding: 10% 5% 2%;
+    padding: 10% 5%;
+}
+
+.our-work.gray {
+    background-color: #f7f8fc;
+}
+
+.our-work.gray.small {
+    padding: 8% 0% 20px 20px;
 }
 
 .container {
@@ -748,13 +776,25 @@ img {
     margin-right: auto;
 }
 
-.grid {
-    /* margin-left: -90px; */
+#grid-container {
+    margin-left: 10px;
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 5px 2px;
-    padding-left: auto;
+    grid-gap: 5px 5px;
+    justify-content: center;
+    /* padding: 5% 5%; */
 
+}
+
+.grid-child {
+    /* margin: 5px; */
+    /* padding-right: 10px; */
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.proj-content img {
+    width: 100%;
 }
 
 .w-col-3 {
@@ -768,9 +808,9 @@ img {
 }
 
 .proj-content {
-    width: 400px;
+    width: 450px;
     position: relative;
-    /* left: 0%; */
+    left: 0%;
     overflow: hidden;
 }
 
@@ -806,8 +846,8 @@ img {
     background-image: linear-gradient(60deg, #ff6361, #e47312);
 }
 
-.card:hover .proj-overlay,
-.card:hover .proj-circle {
+.grid-child:hover .proj-overlay,
+.grid-child:hover .proj-circle {
     /* display: flex; */
     opacity: 1;
 }
@@ -928,6 +968,17 @@ img {
 /* ********************** */
 /* SECTION-7 Testimonials */
 /* ********************** */
+.testimonials {
+    padding: 10% 5%;
+}
+
+.w-col-5 {
+    width: 41.66666667%;
+}
+
+.topHeading {
+    margin-top: 10px;
+}
 
 /* ********************* */
 /* SECTION-8 Latest News */
@@ -1067,16 +1118,34 @@ footer .about,
 .services,
 .contact {
     color: #fff;
-
 }
-
-.about h2 {}
 
 .line {
     position: relative;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+}
+
+.topic {
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    padding-right: 14px;
+}
+
+.topic.size-white {
+    margin-right: 60px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.topic.size-white.in-foot {
+    margin-bottom: 30px;
+    padding-right: 14px;
+    background-color: #0a1229;
 }
 
 .title-line {
@@ -1091,17 +1160,16 @@ footer .about,
     height: 1px;
 }
 
-.about p {}
+.about p {
+    color: #fff;
+}
 
-.services {}
 
 .services .links .link {
     color: #fff;
     /* padding: 40px;
     margin: 50px; */
 }
-
-.contact {}
 
 .contact-way {
     display: flex;
