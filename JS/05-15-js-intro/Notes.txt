@@ -261,4 +261,46 @@ Control Flow
     - looping statements: for, while , do-while
 
 Day 4 : 18.05.2023 -----------------------
+Curriculum:
+    - Switch statement
+    - for loop
+    - while loop
+    - do-while loop statement
+    - Operators
+--------------------------------------
+1. Diff between Document.write() & console.log?
+    - document.write() used in UI
+    - console.log() used in browser/VS code
+
+2. Control flow :-
+If-else is used for 2-3 conditions & gives True/False.
+Switch Statement
+    - It is used for more than 3 conditions
+
+3. Operators :-
+    - operators do some operations on operands.
+   Types of Operators :-
+    1) Arithmetic Operators (+,-,*,/,++a,a++,--a,a--)
+        > BODMAS rule (bracket, order means power or roots, division, multiplication, addition, substraction) is the order of operations in calculations.
+        > Increment & decrement
+            - Pre-Increment - It will increase and then post value.
+            - Post-Increment - It will post as it is & then increase value for next iteration.
+            - Pre-Decrement - It will decrease and then post value.
+            - Post-Decrement - It will post as it is & then decrease value for next iteration.
+
+            ❌ Dont's
+            - we cannot assign increment & decrement to a variable.
+            
+    2) Assignment Operators (+=,-=,*=,/=,%=)
+        > a+=1 shorthand for a=a+1; 
+    3) Comparison Operators (<, >, =, <=, >=, ==, ===, !=)
+        > we have to determine equality between 2 values.
+    4) Logical Operators (&&, ||, !)
+        [and, or & not]
+        > rule for and: Both shld be T means T, anyone F means F.
+        > rule for or: Both T means T , anyone T means T, both F means F.
+        > rule for not: T ----> F ; F ----> T.
+    5) Conditional (Ternary) Operator
+        > Syntax () ? T/F : F/T
+        > It assigns the value to the variable based on the condition.
 
