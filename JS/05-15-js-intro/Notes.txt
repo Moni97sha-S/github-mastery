@@ -303,4 +303,12 @@ Switch Statement
     5) Conditional (Ternary) Operator
         > Syntax () ? T/F : F/T
         > It assigns the value to the variable based on the condition.
+    
+    Day 5 : 19.05.2023 -------------------------------------------------
+    Curriculum:-
+        -
+        -
+        -
+        -
+        -
 

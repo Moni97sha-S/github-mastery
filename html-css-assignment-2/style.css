@@ -900,6 +900,7 @@ img {
 /* *********************** */
 .professionals {
     padding: 5% 10%;
+    background-color: #f7f8fc;
 }
 
 .members {
@@ -969,15 +970,88 @@ img {
 /* SECTION-7 Testimonials */
 /* ********************** */
 .testimonials {
-    padding: 10% 5%;
+    margin-top: 15%;
+}
+
+.flex-row {
+    padding: 0px;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .w-col-5 {
     width: 41.66666667%;
 }
 
+.w-col-7 {
+    width: 58.33333333%
+}
+
 .topHeading {
     margin-top: 10px;
+}
+
+.test-wrapper {
+    background-color: #fff;
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 50px auto 61px;
+    padding: 80px 40px 26px;
+    text-align: center;
+}
+
+.test-wrapper.no-margin-bottom {
+    margin-bottom: 0px;
+}
+
+.test-wrapper.move-down {
+    margin-top: 151px;
+}
+
+.test-photo {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: -115px auto 25px;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 100%;
+    background-image: linear-gradient(8deg, #ff6361, #e47312);
+    opacity: 1;
+    color: #fff;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.text-comma {
+    padding-top: 12px;
+}
+
+.test-title {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.designation {
+    color: #bdbdc9;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.test-paragraph {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
 }
 
 /* ********************* */
@@ -987,8 +1061,8 @@ img {
     padding: 10% 5%;
 }
 
-.w-row {
-    gap: 20px 5px;
+.one-row {
+    grid-gap: 20px 5px;
 }
 
 .blogpost {
