@@ -67,11 +67,14 @@ Types of keyword Variables:-
 
 What kind of data u r going to store & declaration + initialization of different data.
 (5) Types of Data-types:-----------------
-number - 12233 | Eg: var mathMark = 95;
-string - 'nsffd' | Eg: var engMark = 'wwww';
-boolean - true or false | Eg: var tamilMark = true;
-array - [] | Eg: var socialMark = [];
-object - {} | Eg: let engMark = {};
+1. number - 12233 | Eg: var mathMark = 95;
+2. string - 'nsffd' | Eg: var engMark = 'wwww';
+3. boolean - true or false | Eg: var tamilMark = true;
+4. array - [] | Eg: var socialMark = [];
+5. object - {} | Eg: let engMark = {};
+//0 means atleast last empty roll is thr 
+    5.1 null means one of object nothing empty toilet roll only it's holder
+6. undefined means not clearly defined i dont know what is thr in past no holder
 
 💡 console.log(var-name);
     - gives result at browser console
@@ -283,9 +286,17 @@ Switch Statement
     1) Arithmetic Operators (+,-,*,/,++a,a++,--a,a--)
         > BODMAS rule (bracket, order means power or roots, division, multiplication, addition, substraction) is the order of operations in calculations.
         > Increment & decrement
-            - Pre-Increment - It will increase and then post value.
+            - Pre-Increment - It will increase add 1 and then post value.
+            eg:-
+            let aa=11;
+            console.log(++aa); //Res:12
+            console.log(aa); //Res:12
             - Post-Increment - It will post as it is & then increase value for next iteration.
-            - Pre-Decrement - It will decrease and then post value.
+            eg:-
+            let aa=11;
+            console.log(aa++); //Res:11
+            console.log(aa); //Res:12
+            - Pre-Decrement - It will decrease and then post value. 
             - Post-Decrement - It will post as it is & then decrease value for next iteration.
 
             ❌ Dont's
@@ -304,11 +315,51 @@ Switch Statement
         > Syntax () ? T/F : F/T
         > It assigns the value to the variable based on the condition.
     
-    Day 5 : 19.05.2023 -------------------------------------------------
+Day 5 : 19.05.2023-------------------------------
     Curriculum:-
-        -
-        -
-        -
-        -
-        -
+        - Type Conversion / Coersion
+        - Objects
+-------------------------------------------------
+Type Conversion: One data type to another data type.
+    1) Implicit Conversion:-
+        - Js will take care
+        - Eg: let a = 12 + "";
+              console.log(typeof(a)); //Res: string
+        - add: if we have add a number and string then a string.
+        - mul, div: if we have sub/mul/div a number and string then a number.
+    2) Explicit Conversion:-
+        - We tell the js to covert into particular type.
+        - String(), Number() & Boolean()
+        - Eg: convert number to string
+              let age = 35;
+              let str = String(age);
+              console.log(str);
+              console.log(typeof(str));
+        - Eg: convert string to number
+              let person = 'moni';
+              let name = Number(person);
+              console.log(name);
+              console.log(typeof(name));
 
+              Number('') //Res: 0 [Empty String is equal to 0 number]
+        - Eg: convert number into boolean
+              let a = 0;
+              console.log(Boolean(a)); //Res: false
+
+Objects: 
+    - A container has group of properties with key & value pairs.
+    - collects 2 or more no of information of a variable name.
+    - Here variable-name is known as Object.
+
+// Creation of an object
+Skeleton/Syntax:-
+    let var-name = {
+        key:value,
+        key1:value1
+    }
+
+//how to access particular key from an Object
+//Ways to access are (.) & ['']
+    i) console.log(var-name.key1);
+    ii) console.log(var-name['key']);
+              
