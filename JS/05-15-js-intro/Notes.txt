@@ -363,3 +363,74 @@ Skeleton/Syntax:-
     i) console.log(var-name.key1);
     ii) console.log(var-name['key']);
               
+Day 5 : 22.05.2023 -----------------------------
+Curriculum:
+    - Assignment 1 discussion
+------------------------------------------------
+Q-1
+
+Day 5 : 23.05.2023 -----------------------------
+Curriculum:
+    - Object
+    - Arrays
+------------------------------------------------
+Object
+    - It is a heterogeneous datatypes.
+
+Arrays
+    - Collection of homogeneous (same kind of) datatypes
+    - storing group of values with same references
+    - It is denoted by [].
+    - Two types of datatypes:
+        1. Primitive datatypes => String, Number, Boolean
+        2. Non-primitive datatypes => Array & Object is also called as reference data types
+    - Declaration of array (Syntax)
+      var <array-name> = [comma separated values];
+    - Normally we store one by one in each declaration.
+    - But using array we can store many values.
+    - We no need to assign size for an array in JS.
+
+JSON
+    - Javascript Object Notation
+    - Array of Objects
+
+Index
+    - Position/location of values/items.
+    - index starts from 0 to n-1, where n is the number of items
+    - Eg: var users = ["Kajal", "Asin", "Hansika", "Genelia", "Keerthy", "Deepika Padukone"];
+          console.log(users);
+          n=6 & n-1=5
+          console.log(users[6]); //undefined
+    - Identify an Item using Index postn values
+          console.log(users[1]); //Asin
+    - Adding an item in an array
+          users[6]="Tammanah";
+          console.log(users);
+    - Length of an array => arr.length;
+
+Methods
+    - Push method to insert an array & it will always adds at end => <arr_name>.push("value");
+    - Pop method to remove an items from the end => <arr_name>.pop("value");
+    - shift & pop won't accept any item in its argument ().
+    - push() => it will insert a new item at the end of array
+    - pop() => remove an item from the end
+    - unshift() => insert an item at the beginning of an array
+    - shift() => Delete/remove an item at the beginning of an array
+    - problem of using index for adding an item at middle is it removes before item and store new one.
+    - To overcome this we use .splice()
+    - splice()
+       > arr.splice(nth-index, remove how many items, "what item we need to add"); 
+       > it will allow us to add an item at any specific position of an array
+       > arr.splice(start_index, remove_index, "new-item");
+    - sort() => sort / arrange items only in ascending/alphabetical order
+
+**********ANYTHING IN JAVASCRIPT IS CONSIDERED AS AN OBJECT NOT LIKE DATATYPE'S OBJ LIKE IN OOPS CONCEPT*********
+
+    - reverse()=>Reverse an array of items by chaining of methods -> .sort().reverse()
+    - concat()=>It will merge arrays
+    - isArray()=>to identify array is an array
+    - toString()=>converts array to string
+    - split()=>It will convert string to an array
+
+Find/Search in net that object is object or not?
+
