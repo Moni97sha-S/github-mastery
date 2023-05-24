@@ -136,7 +136,7 @@ Main difference among var, let & const?
                 Eg: let total = 'abc';
                     total = 'wwww';
                     console.log(total);
-                    Res: wwww
+                    // Res: wwww
     - 'const' means constant
         > redeclare 
             ✅ We cannot redeclare in same scope which will result in error.
@@ -367,9 +367,40 @@ Day 5 : 22.05.2023 -----------------------------
 Curriculum:
     - Assignment 1 discussion
 ------------------------------------------------
-Q-1
+Q-1 
+let Result = str1.concat(' '),str2.trim(),str3.trimEnd()
 
-Day 5 : 23.05.2023 -----------------------------
+Q-2
+let enteredAlphabet = '123';
+if(typeof enteredAlphabet === 'string'){
+    enteredAlphabet = enteredAlphabet.toLowerCase();
+}
+else if(typeof enteredAlphabet === 'number'){
+    enteredAlphabet = 'number';
+}
+switch(enteredAlphabet){
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    console.log(Vowel);
+    break();
+    case 'number':
+    console.log(Non-Alphabet);
+    break;
+    default:
+    console.log(Consonant);
+} 
+
+Q-3 (55:00)
+
+Q-4
+
+Q-5
+Q-6
+
+Day 6 : 23.05.2023 -----------------------------
 Curriculum:
     - Object
     - Arrays
@@ -434,3 +465,8 @@ Methods
 
 Find/Search in net that object is object or not?
 
+Day 7 : 24.05.2023 -----------------------------
+Curriculum:
+    - 
+    - 
+------------------------------------------------
