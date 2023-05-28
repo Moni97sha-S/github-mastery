@@ -1,3 +1,6 @@
+
+/*******************************🚨 means important topic for Exam***********************************/
+
 Day 1 : 15.05.2023 -------------------------------------
 Curriculum:
 📍Introduction to Javascript
@@ -83,16 +86,17 @@ What kind of data u r going to store & declaration + initialization of different
     - always takes from bottom to top approach.
     - In othr words, last come first according to the rules below.
 
+🚨Main concept & rules:
 💡 redeclare means declare again with same var keyword & variable-name with different value.
     Eg: var name = 'qwe';
         var name = '123';
 
-💡 reassign meand assign again without repeating variable keyword but with same variable name with different value.
+💡 reassign means assign again without repeating variable keyword but with same variable name with different value.
     Eg: var total = 'qwe';
         total = '123';
 📌Rules:-
     1. Var
-        > We can reassign & redeclare.
+        > We can redeclare in same & different scopes & reassign.
     2. let 
         > We cannot redeclare in same scope.
         > We can redeclare in different scope.
@@ -137,6 +141,14 @@ Main difference among var, let & const?
                     total = 'wwww';
                     console.log(total);
                     // Res: wwww
+
+                    if{
+                    var a=10;
+                    var b=20;
+                    let c=a+b;
+                    }
+                    console.log(c); //Res: ?
+
     - 'const' means constant
         > redeclare 
             ✅ We cannot redeclare in same scope which will result in error.
@@ -363,7 +375,7 @@ Skeleton/Syntax:-
     i) console.log(var-name.key1);
     ii) console.log(var-name['key']);
               
-Day 5 : 22.05.2023 -----------------------------
+Day 6 : 22.05.2023 -----------------------------
 Curriculum:
     - Assignment 1 discussion
 ------------------------------------------------
@@ -400,7 +412,7 @@ Q-4
 Q-5
 Q-6
 
-Day 6 : 23.05.2023 -----------------------------
+Day 7 : 23.05.2023 -----------------------------
 Curriculum:
     - Object
     - Arrays
@@ -449,24 +461,136 @@ Methods
     - shift() => Delete/remove an item at the beginning of an array
     - problem of using index for adding an item at middle is it removes before item and store new one.
     - To overcome this we use .splice()
-    - splice()
-       > arr.splice(nth-index, remove how many items, "what item we need to add"); 
-       > it will allow us to add an item at any specific position of an array
-       > arr.splice(start_index, remove_index, "new-item");
     - sort() => sort / arrange items only in ascending/alphabetical order
 
 **********ANYTHING IN JAVASCRIPT IS CONSIDERED AS AN OBJECT NOT LIKE DATATYPE'S OBJ LIKE IN OOPS CONCEPT*********
 
-    - reverse()=>Reverse an array of items by chaining of methods -> .sort().reverse()
-    - concat()=>It will merge arrays
-    - isArray()=>to identify array is an array
-    - toString()=>converts array to string
-    - split()=>It will convert string to an array
+    - reverse() => Reverse an array of items by chaining of methods -> .sort().reverse()
+    - concat() => It will merge arrays
+    - isArray() => to identify array is an array
+    - toString() => converts array to string
+    - split() => It will convert string to an array
+    - 🚨 splice()
+       > It is mutable (changes original array)
+       > arr.splice(start-index, delete/remove how many items, "what new item we need to add"); 
+       > it will allow us to add an item at any specific position of an array
+       > Syntax: arr.splice(start_index, remove_index, "new-item");
+       > We can directly edit the original array.
+       > We can delete from any index just we have to mention it as 1st parameter.
+       > We can add new item in array.
 
 Find/Search in net that object is object or not?
 
-Day 7 : 24.05.2023 -----------------------------
+Day 8 : 24.05.2023 -----------------------------
 Curriculum:
+    - slice()
+    🚨 Difference between slice & splice methods? 
+    - constant arrays
+    - Loops
+    - Types of Loops:-
+        - For Loop
+        - While Loop
+    - break statement
+    - continue statement
+------------------------------------------------
+🚨 slice():
+    > Immutable means not change original array
+    > Syntax: let newArr = arr.slice(no_of_items_to_delete);
+    > Syntax: let newArr = arr.slice(start_index_as_arr_starts_from_[0], normal_position_starts_from_1);
+🚨Main diff btn slice & splice methods:-
+    slice():
+        > Immutable means not change original array.
+                    // pass one argument deletes slice of original array & returns in new array.
+        > Syntax: let newArr = arr.slice(no_of_items_to_delete); 
+                    // passes 2 arguments gives subarray
+        > Syntax: let newArr = arr.slice(start_index_as_arr_starts_from_[0], normal_position_starts_from_1);
+        > We need to assign it to a new array by creating new one. We can't edit in original array.
+        > It takes some slice from original array & distribute it via new array & remaining all items get deleted.
+        > Here we can delete from any start (eg:-0) array index & normal position if 3 means it deletes till 2nd postn.
+        > We cannot add new item in array.
+        > It will take some part from that array index & return it as sub-array from original array.
+        > 2nd parameter minus 1st parameter gives position value which counts from 1st parameter.
+    splice()
+       > Syntax: arr.splice(start_index, remove_index, "new-item");
+       > Syntax meaning arr.splice(start-index, delete/remove how many items, "what new item we need to add"); 
+       > It is mutable (changes original array).
+       > it will allow us to add an item at any specific position of an array
+       > We can directly edit the original array.
+       > We can delete from any index just we have to mention it as 1st parameter.
+       > We can add new item in array.
+
+Constant Arrays:
+    > constant means permanent/fixed/stable/can't change
+    > We cannot redeclare in same scope with same arr_name.
+    > When only one item need to be selected in an array or some array we don't want to change in those cases we use const (keyword means reserved word).
+
+Loops:
+    > Cycle
+    > Repeating something in a particular manner.
+    > Efficient method
+    > In order to avoid wasting memory and time, we use loops.
+    > Types: Only two i. while loop & ii. for loop
+
+While Loop:
+    - Syntax: while(condition){ 
+                logic for repeat
+                optional: increment / decrement; for next iteration
+              }
+    - Optimized & efficient one.
+
+For Loop:
+    - Syntax: for(initialization;condition;increment/decrement operator){
+                    logic for code;
+              }
     - 
+
+Break statement:
+    - To break at some point and completely come out of it.
+
+Continue statement:
+    - continue => To skip the items
+
+Day 9 : 25.05.2023 -----------------------------
+Curriculum:
+    - Function
     - 
 ------------------------------------------------
+
+Function
+- What is function?
+    > set of reusable code - that we use to perform some action
+    > Inbuilt Functions/methods means do some task which already mentioned in that code | We dont need to do any code or write statements Eg:- slice(), toString() 
+    > User defined functions are developer created functions.
+
+- How to create a function?
+    > function is a keyword
+    > sum() is a function_name(parameter/arguments)
+    Eg:- function sumOfTwo(){ //Function Declaration | Accelerator or rules
+          let a=10;
+          let b=10;
+          let c=a+b;
+          console.log(c);
+         } //Res: No execution
+- How to call a function?
+    > console.log(c); -----> not defined
+    > To execute, we need to call the function. Until & unless we call function code will not executed.
+    > sumOfTwo(); //Above code executes | Function call 
+- How to pass the parameters to the function?
+    > Reusability
+- how we can get result from the function?
+    > return keyword is used to returns the result to function call.
+    > If return is spotted immediately comes out and gives the result. This won't checks for code lines after return keyword.
+    > return is optional.
+
+-  How to print at console using function call - invoke?
+    > using return keyword at end within function block of code 
+    > And (outside the function block) variable declaration = function call();
+    > 'return' value will store at variable declared outside the function when variable mapped with function call.
+    > Without return keyword if we call the function after variable declaration and console it becomes undefined datatype.
+
+- function hoisting:
+    > function declaration are hoisted at the top
+    > It is similar to var keyword
+
+- Link: https://github.com/Thangarajcs/js-notes/blob/main/day-9
+
